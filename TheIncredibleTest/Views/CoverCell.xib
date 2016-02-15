@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="TradeGothic-Bold.ttf">
+            <string>TradeGothicW01-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="iB0-lM-qyU" customClass="CoverCell">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="155"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2e1-ug-6w8">
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="133"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Ia-bK-JE3">
+                                <rect key="frame" x="2" y="2" width="86" height="129"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="4" y="4" width="100" height="150"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_bookmark_red.png" translatesAutoresizingMaskIntoConstraints="NO" id="H91-yU-fFA">
+                                <rect key="frame" x="63" y="0.0" width="20" height="20"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="4TQ-ln-1x0">
+                                <rect key="frame" x="35" y="57" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4TQ-ln-1x0" firstAttribute="top" secondItem="2e1-ug-6w8" secondAttribute="top" constant="57" id="BU8-uj-lBA"/>
+                            <constraint firstAttribute="centerX" secondItem="4TQ-ln-1x0" secondAttribute="centerX" id="mGU-Zv-klg"/>
+                        </constraints>
+                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                            <rect key="frame" x="0.0" y="0.0" width="108" height="158"/>
+                        </variation>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#11" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2JF-4v-Zbq">
+                        <rect key="frame" x="8" y="134" width="74" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="74" id="YTg-m8-4fH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                            <rect key="frame" x="8" y="157" width="42" height="21"/>
+                        </variation>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="2JF-4v-Zbq" firstAttribute="top" secondItem="2e1-ug-6w8" secondAttribute="bottom" constant="1" id="Maw-fC-zNQ"/>
+                <constraint firstItem="2e1-ug-6w8" firstAttribute="leading" secondItem="iB0-lM-qyU" secondAttribute="leading" id="UjI-qT-ETS"/>
+                <constraint firstAttribute="bottom" secondItem="2JF-4v-Zbq" secondAttribute="bottom" id="Wci-ev-Csc"/>
+                <constraint firstItem="2e1-ug-6w8" firstAttribute="top" secondItem="iB0-lM-qyU" secondAttribute="top" id="cNd-qp-pGJ"/>
+                <constraint firstAttribute="trailing" secondItem="2e1-ug-6w8" secondAttribute="trailing" id="eDd-DB-kjw"/>
+                <constraint firstItem="2e1-ug-6w8" firstAttribute="centerX" secondItem="2JF-4v-Zbq" secondAttribute="centerX" id="s9d-Za-xDh"/>
+            </constraints>
+            <size key="customSize" width="284" height="263"/>
+            <connections>
+                <outlet property="bookmarkImage" destination="H91-yU-fFA" id="0wz-Fv-bWH"/>
+                <outlet property="coverImage" destination="2Ia-bK-JE3" id="f7e-ef-UgB"/>
+                <outlet property="issueLabel" destination="2JF-4v-Zbq" id="Ehp-B6-ybu"/>
+                <outlet property="loadIndicator" destination="4TQ-ln-1x0" id="4oq-Dd-JOy"/>
+            </connections>
+            <point key="canvasLocation" x="846" y="352.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_bookmark_red.png" width="25" height="25"/>
+    </resources>
+</document>

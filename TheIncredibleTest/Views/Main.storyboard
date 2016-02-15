@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PQZ-Cr-ZnS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="TradeGothic-Bold.ttf">
+            <string>TradeGothicW01-Bold</string>
+            <string>TradeGothicW01-Bold</string>
+            <string>TradeGothicW01-Bold</string>
+            <string>TradeGothicW01-Bold</string>
+            <string>TradeGothicW01-Bold</string>
+            <string>TradeGothicW01-Bold</string>
+            <string>TradeGothicW01-Bold</string>
+            <string>TradeGothicW01-Bold</string>
+            <string>TradeGothicW01-Bold</string>
+            <string>TradeGothicW01-Bold</string>
+            <string>TradeGothicW01-Bold</string>
+            <string>TradeGothicW01-Bold</string>
+            <string>TradeGothicW01-Bold</string>
+            <string>TradeGothicW01-Bold</string>
+            <string>TradeGothicW01-Bold</string>
+            <string>TradeGothicW01-Bold</string>
+            <string>TradeGothicW01-Bold</string>
+            <string>TradeGothicW01-Bold</string>
+            <string>TradeGothicW01-Bold</string>
+            <string>TradeGothicW01-Bold</string>
+            <string>TradeGothicW01-Bold</string>
+            <string>TradeGothicW01-Bold</string>
+        </mutableArray>
+        <mutableArray key="TradeGothic-Roman.ttf">
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+            <string>TradeGothicW01-Roman</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="SKm-TV-rOh">
+            <objects>
+                <collectionViewController id="UiK-sh-A5p" customClass="MainViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Ka4-mB-a2E">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="4" id="r9U-GP-iNp">
+                            <size key="itemSize" width="90" height="155"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="50" height="26"/>
+                            <inset key="sectionInset" minX="20" minY="30" maxX="20" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kReusableViewFooter" id="wQn-vg-Xka" customClass="MainCollectionFooterReusableView">
+                            <rect key="frame" x="0.0" y="94" width="320" height="26"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data provided by Marvel. © 2014 Marvel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQx-KQ-6df">
+                                    <rect key="frame" x="44" y="10" width="233" height="16"/>
+                                    <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="13"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottomMargin" secondItem="lQx-KQ-6df" secondAttribute="bottom" constant="-8" id="W2w-Ku-4CG"/>
+                                <constraint firstAttribute="centerX" secondItem="lQx-KQ-6df" secondAttribute="centerX" constant="-0.5" id="zvY-GX-rde"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="messageLabel" destination="lQx-KQ-6df" id="v1q-s5-tZi"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="UiK-sh-A5p" id="zRq-N1-5wn"/>
+                            <outlet property="delegate" destination="UiK-sh-A5p" id="ejO-2W-tob"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="JbW-zk-dWF">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <segue destination="hlX-jg-Mb7" kind="push" identifier="kListToDetailSegue" id="B2J-5U-dwB"/>
+                        <segue destination="laE-oG-2hZ" kind="push" identifier="kListToAboutSegue" id="s0y-uI-7Sf"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lrJ-Yb-Nhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="881" y="142"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="cy3-FO-VFo">
+            <objects>
+                <viewController id="hlX-jg-Mb7" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P2d-nt-VOq"/>
+                        <viewControllerLayoutGuide type="bottom" id="U7s-Zd-nh5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cGL-Yj-P4R">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Im8-CU-S7M">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Zq-JH-q1b" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="570"/>
+                                        <userGuides>
+                                            <userLayoutGuide location="16" affinity="minX"/>
+                                            <userLayoutGuide location="398" affinity="minX"/>
+                                        </userGuides>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_captainamerica" translatesAutoresizingMaskIntoConstraints="NO" id="pj2-ba-QGc">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVv-nV-XIV">
+                                                <rect key="frame" x="16" y="102" width="104" height="154"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tzb-Xo-hCu">
+                                                        <rect key="frame" x="2" y="2" width="100" height="150"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x60-xS-FfN">
+                                                        <rect key="frame" x="2" y="2" width="100" height="150"/>
+                                                        <state key="normal">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="HXz-kq-zRL" kind="push" identifier="kDetailToCoverPhotoSegue" id="3Qg-fA-Gp5"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_bookmark_red.png" translatesAutoresizingMaskIntoConstraints="NO" id="b9M-Bo-qCD">
+                                                        <rect key="frame" x="77" y="0.0" width="25" height="25"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="154" id="26o-U5-T0A"/>
+                                                    <constraint firstAttribute="centerY" secondItem="Tzb-Xo-hCu" secondAttribute="centerY" id="27W-gi-pby"/>
+                                                    <constraint firstItem="Tzb-Xo-hCu" firstAttribute="leading" secondItem="hVv-nV-XIV" secondAttribute="leading" constant="2" id="3Lc-In-QZX"/>
+                                                    <constraint firstItem="Tzb-Xo-hCu" firstAttribute="top" secondItem="hVv-nV-XIV" secondAttribute="top" constant="2" id="CWF-er-1t1"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Tzb-Xo-hCu" secondAttribute="bottom" constant="2" id="DMW-Yj-vRF"/>
+                                                    <constraint firstAttribute="width" constant="104" id="GST-K3-ya4"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Tzb-Xo-hCu" secondAttribute="trailing" constant="2" id="RVf-w3-wJx"/>
+                                                    <constraint firstAttribute="trailing" secondItem="x60-xS-FfN" secondAttribute="trailing" constant="2" id="RWN-3L-EF4"/>
+                                                    <constraint firstItem="x60-xS-FfN" firstAttribute="leading" secondItem="hVv-nV-XIV" secondAttribute="leading" constant="2" id="WPD-65-efc"/>
+                                                    <constraint firstAttribute="centerY" secondItem="x60-xS-FfN" secondAttribute="centerY" id="d7j-gG-wzx"/>
+                                                    <constraint firstAttribute="centerX" secondItem="x60-xS-FfN" secondAttribute="centerX" id="ffL-Xa-eJC"/>
+                                                    <constraint firstItem="x60-xS-FfN" firstAttribute="top" secondItem="hVv-nV-XIV" secondAttribute="top" constant="2" id="hbI-VK-gxz"/>
+                                                    <constraint firstAttribute="bottom" secondItem="x60-xS-FfN" secondAttribute="bottom" constant="2" id="v2W-bf-BgT"/>
+                                                    <constraint firstAttribute="centerX" secondItem="Tzb-Xo-hCu" secondAttribute="centerX" id="zmc-TQ-NUT"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDX-ke-FRR" userLabel="Title Label">
+                                                <rect key="frame" x="16" y="264" width="382" height="26"/>
+                                                <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="21"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor " translatesAutoresizingMaskIntoConstraints="NO" id="2sT-16-dpp">
+                                                <rect key="frame" x="11" y="298" width="392" height="134"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="134" id="iy3-fk-M9d"/>
+                                                </constraints>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Published:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZ1-WM-wm5">
+                                                <rect key="frame" x="16" y="440" width="66" height="18"/>
+                                                <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="15"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="September 11, 2012" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S71-AG-2Bh">
+                                                <rect key="frame" x="90" y="441" width="140" height="18"/>
+                                                <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZt-KE-wDy">
+                                                <rect key="frame" x="16" y="466" width="37" height="18"/>
+                                                <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="15"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 3,99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQb-9z-jDE">
+                                                <rect key="frame" x="61" y="467" width="46" height="18"/>
+                                                <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pages:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUc-1V-nNC">
+                                                <rect key="frame" x="16" y="492" width="42" height="18"/>
+                                                <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="15"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="34" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="350-pm-05H">
+                                                <rect key="frame" x="66" y="493" width="19" height="18"/>
+                                                <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLj-QU-HXg">
+                                                <rect key="frame" x="353" y="520" width="45" height="30"/>
+                                                <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="15"/>
+                                                <state key="normal" title="More...">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="e2h-cj-CBl" kind="push" identifier="kDetailToComicInfoSegue" id="xDg-ad-buw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="tDX-ke-FRR" secondAttribute="trailing" constant="16" id="17b-lZ-537"/>
+                                            <constraint firstItem="2sT-16-dpp" firstAttribute="top" secondItem="tDX-ke-FRR" secondAttribute="bottom" constant="8" id="2ap-7R-Qgo"/>
+                                            <constraint firstItem="JUc-1V-nNC" firstAttribute="top" secondItem="JZt-KE-wDy" secondAttribute="bottom" constant="8" id="6hm-aP-DPo"/>
+                                            <constraint firstItem="JZt-KE-wDy" firstAttribute="baseline" secondItem="yQb-9z-jDE" secondAttribute="baseline" id="8fj-Sl-1ai"/>
+                                            <constraint firstItem="pj2-ba-QGc" firstAttribute="leading" secondItem="3Zq-JH-q1b" secondAttribute="leading" id="8nq-Hl-mta"/>
+                                            <constraint firstItem="S71-AG-2Bh" firstAttribute="leading" secondItem="dZ1-WM-wm5" secondAttribute="trailing" constant="8" id="92Y-XI-3IZ"/>
+                                            <constraint firstItem="JZt-KE-wDy" firstAttribute="top" secondItem="dZ1-WM-wm5" secondAttribute="bottom" constant="8" id="AVP-rA-lOU"/>
+                                            <constraint firstItem="JZt-KE-wDy" firstAttribute="leading" secondItem="3Zq-JH-q1b" secondAttribute="leading" constant="16" id="GUJ-8f-Ye4"/>
+                                            <constraint firstItem="tDX-ke-FRR" firstAttribute="leading" secondItem="3Zq-JH-q1b" secondAttribute="leading" constant="16" id="LBu-sL-tjC"/>
+                                            <constraint firstItem="dZ1-WM-wm5" firstAttribute="top" secondItem="2sT-16-dpp" secondAttribute="bottom" constant="8" id="Mnq-IM-RIp"/>
+                                            <constraint firstAttribute="height" constant="570" id="NEh-z1-baM"/>
+                                            <constraint firstItem="pj2-ba-QGc" firstAttribute="top" secondItem="3Zq-JH-q1b" secondAttribute="top" id="PkJ-l9-9qB"/>
+                                            <constraint firstItem="tDX-ke-FRR" firstAttribute="top" secondItem="hVv-nV-XIV" secondAttribute="bottom" constant="8" id="Wd6-Qe-64H"/>
+                                            <constraint firstItem="S71-AG-2Bh" firstAttribute="baseline" secondItem="dZ1-WM-wm5" secondAttribute="baseline" id="Xuh-zd-o7s"/>
+                                            <constraint firstItem="hVv-nV-XIV" firstAttribute="top" secondItem="3Zq-JH-q1b" secondAttribute="top" constant="102" id="ZGs-is-IcP"/>
+                                            <constraint firstAttribute="trailing" secondItem="2sT-16-dpp" secondAttribute="trailing" constant="11" id="bZm-HL-MTe"/>
+                                            <constraint firstItem="hVv-nV-XIV" firstAttribute="leading" secondItem="3Zq-JH-q1b" secondAttribute="leading" constant="16" id="c7g-pT-3ha"/>
+                                            <constraint firstItem="350-pm-05H" firstAttribute="leading" secondItem="JUc-1V-nNC" secondAttribute="trailing" constant="8" id="cyq-KQ-wda"/>
+                                            <constraint firstItem="yQb-9z-jDE" firstAttribute="leading" secondItem="JZt-KE-wDy" secondAttribute="trailing" constant="8" id="dA8-t5-WsZ"/>
+                                            <constraint firstItem="pLj-QU-HXg" firstAttribute="top" secondItem="JUc-1V-nNC" secondAttribute="bottom" constant="10" id="dYk-ma-Fsb"/>
+                                            <constraint firstAttribute="trailing" secondItem="pLj-QU-HXg" secondAttribute="trailing" constant="16" id="iHf-En-kqF"/>
+                                            <constraint firstItem="2sT-16-dpp" firstAttribute="leading" secondItem="3Zq-JH-q1b" secondAttribute="leading" constant="11" id="n4X-ww-FWV"/>
+                                            <constraint firstItem="dZ1-WM-wm5" firstAttribute="leading" secondItem="3Zq-JH-q1b" secondAttribute="leading" constant="16" id="pXU-Fh-e5h"/>
+                                            <constraint firstAttribute="trailing" secondItem="pj2-ba-QGc" secondAttribute="trailing" id="pfT-X9-Xaw"/>
+                                            <constraint firstItem="JUc-1V-nNC" firstAttribute="leading" secondItem="3Zq-JH-q1b" secondAttribute="leading" constant="16" id="r5y-md-Z2w"/>
+                                            <constraint firstItem="JUc-1V-nNC" firstAttribute="baseline" secondItem="350-pm-05H" secondAttribute="baseline" id="xCE-5R-ran"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="3Zq-JH-q1b" secondAttribute="bottom" id="NTj-3F-c6a"/>
+                                    <constraint firstItem="3Zq-JH-q1b" firstAttribute="top" secondItem="Im8-CU-S7M" secondAttribute="top" id="dZf-HJ-StH"/>
+                                    <constraint firstItem="3Zq-JH-q1b" firstAttribute="leading" secondItem="Im8-CU-S7M" secondAttribute="leading" id="nCf-S7-jgE"/>
+                                    <constraint firstItem="3Zq-JH-q1b" firstAttribute="top" secondItem="Im8-CU-S7M" secondAttribute="top" id="ok6-i7-rOQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Zq-JH-q1b" secondAttribute="trailing" id="q60-d7-ouB"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.062745098039215685" blue="0.12941176470588237" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Im8-CU-S7M" firstAttribute="leading" secondItem="cGL-Yj-P4R" secondAttribute="leading" id="XGe-3Z-mlo"/>
+                            <constraint firstItem="Im8-CU-S7M" firstAttribute="top" secondItem="cGL-Yj-P4R" secondAttribute="top" id="ZUN-AX-p8Y"/>
+                            <constraint firstAttribute="trailing" secondItem="Im8-CU-S7M" secondAttribute="trailing" id="d5p-Of-j76"/>
+                            <constraint firstItem="3Zq-JH-q1b" firstAttribute="width" secondItem="cGL-Yj-P4R" secondAttribute="width" id="fRA-4o-LLp"/>
+                            <constraint firstItem="U7s-Zd-nh5" firstAttribute="top" secondItem="Im8-CU-S7M" secondAttribute="bottom" id="wlz-z7-FtD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="F5l-hW-fzL">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="bookmarkImage" destination="b9M-Bo-qCD" id="rGr-im-c6z"/>
+                        <outlet property="coverImage" destination="Tzb-Xo-hCu" id="gzY-BR-xLf"/>
+                        <outlet property="descriptionText" destination="2sT-16-dpp" id="lZC-mi-H8G"/>
+                        <outlet property="pagesLabel" destination="350-pm-05H" id="62t-Td-ITx"/>
+                        <outlet property="priceLabel" destination="yQb-9z-jDE" id="E1X-5f-zju"/>
+                        <outlet property="publishedDateLabel" destination="S71-AG-2Bh" id="l9T-j7-JtU"/>
+                        <outlet property="titleLabel" destination="tDX-ke-FRR" id="uUN-cg-viD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4qk-MI-rjw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1525" y="148"/>
+        </scene>
+        <!--Comic Info View Controller-->
+        <scene sceneID="U4R-og-rZR">
+            <objects>
+                <tableViewController id="e2h-cj-CBl" customClass="ComicInfoViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Pze-Wm-ZRk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.035294117647058823" green="0.082352941176470587" blue="0.14509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="" id="5Hh-9l-tC8">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="W2G-iF-hQT" detailTextLabel="Ikc-pd-DE2" style="IBUITableViewCellStyleValue1" id="ZXx-eM-lvv">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZXx-eM-lvv" id="eSc-v4-Z1T">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W2G-iF-hQT">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ikc-pd-DE2">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="9jH-c9-rib" detailTextLabel="z6w-3f-Gja" style="IBUITableViewCellStyleValue1" id="Zq4-qx-vW6">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zq4-qx-vW6" id="Tc1-gA-ASJ">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Issue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9jH-c9-rib">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="z6w-3f-Gja">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="S3g-9H-apk" detailTextLabel="gcL-ac-GQh" style="IBUITableViewCellStyleValue1" id="Pcq-Wi-bhf">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pcq-Wi-bhf" id="SC0-WV-4lH">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Diamond Code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S3g-9H-apk">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gcL-ac-GQh">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="2EK-wz-prS" detailTextLabel="x5c-W3-FO5" style="IBUITableViewCellStyleValue1" id="dSZ-lB-w8g">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dSZ-lB-w8g" id="tGD-Lu-FOS">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Id" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2EK-wz-prS">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x5c-W3-FO5">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="3AF-OO-xlY" detailTextLabel="aJY-ZQ-neE" style="IBUITableViewCellStyleValue1" id="cVc-TP-k6z">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cVc-TP-k6z" id="uSA-Hw-ult">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Digital Id" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3AF-OO-xlY">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aJY-ZQ-neE">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="Mjr-n0-b59" detailTextLabel="meh-Jd-dfZ" style="IBUITableViewCellStyleValue1" id="hFh-Tw-kMU">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hFh-Tw-kMU" id="TCB-aB-jzg">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Format" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mjr-n0-b59">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="meh-Jd-dfZ">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="" id="U9r-vU-ViP">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="p2E-Dh-hKf" detailTextLabel="nri-88-Ueb" style="IBUITableViewCellStyleValue1" id="BWm-0o-jpp">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BWm-0o-jpp" id="KqV-wT-DHg">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Serie" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p2E-Dh-hKf">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nri-88-Ueb">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="" id="Wie-Op-6mw">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="7Qw-GR-KPv" detailTextLabel="2bP-n8-how" style="IBUITableViewCellStyleValue1" id="kMY-9c-pmV">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kMY-9c-pmV" id="m2h-Wa-7ko">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="On Sale" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Qw-GR-KPv">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2bP-n8-how">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="tGZ-0N-bpx" detailTextLabel="6M6-Hy-5bV" style="IBUITableViewCellStyleValue1" id="VOs-Bm-PCO">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VOs-Bm-PCO" id="Bgo-Vs-ATE">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="FOC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tGZ-0N-bpx">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6M6-Hy-5bV">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="Z4I-Jr-sgP" detailTextLabel="Lhz-l7-2wB" style="IBUITableViewCellStyleValue1" id="bZN-3q-79P">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bZN-3q-79P" id="lgA-CP-HUx">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Unlimited" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z4I-Jr-sgP">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lhz-l7-2wB">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="vxx-J8-STq" detailTextLabel="ko2-px-PUk" style="IBUITableViewCellStyleValue1" id="8Gv-ZR-NuM">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Gv-ZR-NuM" id="17L-Tv-fG3">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Digital Purchase" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vxx-J8-STq">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ko2-px-PUk">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="" id="DFC-bg-BwL">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="aRh-Nz-0hT" detailTextLabel="ceS-xL-dvb" style="IBUITableViewCellStyleValue1" id="wWx-GO-xsB">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wWx-GO-xsB" id="AKk-3I-kOT">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Print" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aRh-Nz-0hT">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ceS-xL-dvb">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="azO-Vg-QmQ" detailTextLabel="Gvd-yf-dMn" style="IBUITableViewCellStyleValue1" id="GR9-FL-kny">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GR9-FL-kny" id="6FF-eE-5vy">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Digital" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="azO-Vg-QmQ">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gvd-yf-dMn">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="PvM-8k-OFZ">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="KEs-af-CSi" style="IBUITableViewCellStyleDefault" id="0IW-YY-QHe">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0IW-YY-QHe" id="gvo-89-ywE">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="More Details" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KEs-af-CSi">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                                    <color key="textColor" red="1" green="0.99994057416915894" blue="0.99998033046722412" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="bpu-wc-h7t" style="IBUITableViewCellStyleDefault" id="PAn-Jw-0te">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PAn-Jw-0te" id="owD-hd-vn8">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Buy this comic..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bpu-wc-h7t">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                                    <color key="textColor" red="1" green="0.99994057416915894" blue="0.99998033046722412" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="eoW-Tf-1XA" style="IBUITableViewCellStyleDefault" id="O1w-Ll-qYs">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="O1w-Ll-qYs" id="Jy9-Kd-TBB">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Read Online" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eoW-Tf-1XA">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                                    <color key="textColor" red="1" green="0.99994057416915894" blue="0.99998033046722412" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="e2h-cj-CBl" id="roS-jW-LRH"/>
+                            <outlet property="delegate" destination="e2h-cj-CBl" id="wO3-Vz-AIn"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="dd4-FT-Fa7"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xRE-HX-Jo9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2030" y="512"/>
+        </scene>
+        <!--Cover Photo View Controller-->
+        <scene sceneID="ePx-Hi-aRC">
+            <objects>
+                <viewController id="HXz-kq-zRL" customClass="CoverPhotoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i5j-5D-SxF"/>
+                        <viewControllerLayoutGuide type="bottom" id="y2M-BT-sAx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fho-Sv-yKB">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="10" translatesAutoresizingMaskIntoConstraints="NO" id="w1V-Rc-gav">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rpN-bd-DKv">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="rpN-bd-DKv" secondAttribute="bottom" id="52N-jy-0gC"/>
+                                    <constraint firstItem="rpN-bd-DKv" firstAttribute="leading" secondItem="w1V-Rc-gav" secondAttribute="leading" id="E5O-bK-kga"/>
+                                    <constraint firstAttribute="trailing" secondItem="rpN-bd-DKv" secondAttribute="trailing" id="X0o-pY-OXy"/>
+                                    <constraint firstItem="rpN-bd-DKv" firstAttribute="top" secondItem="w1V-Rc-gav" secondAttribute="top" id="quy-Dq-Xlb"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="HXz-kq-zRL" id="0aQ-Uk-LtQ"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="y2M-BT-sAx" firstAttribute="top" secondItem="w1V-Rc-gav" secondAttribute="bottom" id="56U-fc-nED"/>
+                            <constraint firstItem="rpN-bd-DKv" firstAttribute="height" secondItem="fho-Sv-yKB" secondAttribute="height" id="Jgc-Ni-7Fv"/>
+                            <constraint firstItem="rpN-bd-DKv" firstAttribute="width" secondItem="fho-Sv-yKB" secondAttribute="width" id="NWH-H6-Cxz"/>
+                            <constraint firstItem="w1V-Rc-gav" firstAttribute="top" secondItem="i5j-5D-SxF" secondAttribute="bottom" id="les-vm-vBg"/>
+                            <constraint firstItem="w1V-Rc-gav" firstAttribute="leading" secondItem="fho-Sv-yKB" secondAttribute="leading" id="y5q-Id-upI"/>
+                            <constraint firstAttribute="trailing" secondItem="w1V-Rc-gav" secondAttribute="trailing" id="zOk-dJ-MFd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Grr-F9-i4D"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="coverImage" destination="rpN-bd-DKv" id="DsD-lh-e8Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eTI-bK-2ea" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2030" y="-311"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9VE-9d-Koc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PQZ-Cr-ZnS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="doh-70-rLO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.90588235294117647" green="0.12156862745098039" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UiK-sh-A5p" kind="relationship" relationship="rootViewController" id="Xey-pQ-iXh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bFF-iS-DID" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448" y="156"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="Ob8-24-aG1">
+            <objects>
+                <viewController id="laE-oG-2hZ" customClass="AboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZZr-kD-9sX"/>
+                        <viewControllerLayoutGuide type="bottom" id="WK5-Bl-ZbP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t9r-qW-Rsb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="img_n2omatt.png" translatesAutoresizingMaskIntoConstraints="NO" id="d4l-ui-LSH">
+                                <rect key="frame" x="130" y="72" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="6SZ-st-ynw"/>
+                                    <constraint firstAttribute="height" constant="120" id="frf-Sa-ADu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hi there, I'm N2OMatt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfH-Kq-w51">
+                                <rect key="frame" x="101" y="202" width="178" height="24"/>
+                                <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I hope the you enjoyed the app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jW-7q-ezb">
+                                <rect key="frame" x="89" y="234" width="203" height="18"/>
+                                <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="You can reach me at" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RB-FP-V82">
+                                <rect key="frame" x="123" y="264" width="134" height="18"/>
+                                <fontDescription key="fontDescription" name="TradeGothicW01-Roman" family="TradeGothicW01-Roman" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAu-6e-lMU">
+                                <rect key="frame" x="101" y="290" width="35" height="30"/>
+                                <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="15"/>
+                                <state key="normal" title="Email">
+                                    <color key="titleColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onEmailButtonPressed:" destination="laE-oG-2hZ" eventType="touchUpInside" id="8dF-N6-TRt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jB4-vR-YT3">
+                                <rect key="frame" x="169" y="290" width="42" height="30"/>
+                                <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="15"/>
+                                <state key="normal" title="Twitter">
+                                    <color key="titleColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTwitterButtonPressed:" destination="laE-oG-2hZ" eventType="touchUpInside" id="uwu-hd-IuN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPI-Se-00J">
+                                <rect key="frame" x="238" y="290" width="41" height="30"/>
+                                <fontDescription key="fontDescription" name="TradeGothicW01-Bold" family="TradeGothicW01-Bold" pointSize="15"/>
+                                <state key="normal" title="GitHub">
+                                    <color key="titleColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onGithubButtonPressed:" destination="laE-oG-2hZ" eventType="touchUpInside" id="jSn-KX-bOO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.035294117647058823" green="0.082352941176470587" blue="0.14509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jB4-vR-YT3" firstAttribute="leading" secondItem="WAu-6e-lMU" secondAttribute="trailing" constant="33" id="7ga-gc-PRW"/>
+                            <constraint firstItem="d4l-ui-LSH" firstAttribute="centerX" secondItem="XfH-Kq-w51" secondAttribute="centerX" id="95Y-u5-Dc6"/>
+                            <constraint firstItem="2RB-FP-V82" firstAttribute="centerX" secondItem="0jW-7q-ezb" secondAttribute="centerX" constant="-0.5" id="AmQ-PQ-ctE"/>
+                            <constraint firstAttribute="centerX" secondItem="d4l-ui-LSH" secondAttribute="centerX" constant="-2" id="KDE-qc-RK1"/>
+                            <constraint firstItem="jB4-vR-YT3" firstAttribute="centerX" secondItem="2RB-FP-V82" secondAttribute="centerX" id="Pnb-ug-bAh"/>
+                            <constraint firstItem="2RB-FP-V82" firstAttribute="top" secondItem="0jW-7q-ezb" secondAttribute="bottom" constant="12" id="UI3-lD-J6N"/>
+                            <constraint firstItem="d4l-ui-LSH" firstAttribute="top" secondItem="ZZr-kD-9sX" secondAttribute="bottom" constant="8" id="UUz-kQ-czy"/>
+                            <constraint firstItem="XfH-Kq-w51" firstAttribute="centerX" secondItem="0jW-7q-ezb" secondAttribute="centerX" constant="-0.5" id="VSs-y3-a1B"/>
+                            <constraint firstItem="WPI-Se-00J" firstAttribute="leading" secondItem="jB4-vR-YT3" secondAttribute="trailing" constant="27" id="ZLU-Uy-yGG"/>
+                            <constraint firstItem="jB4-vR-YT3" firstAttribute="centerY" secondItem="WAu-6e-lMU" secondAttribute="centerY" id="ZQL-MT-Fkj"/>
+                            <constraint firstItem="jB4-vR-YT3" firstAttribute="top" secondItem="2RB-FP-V82" secondAttribute="bottom" constant="8" id="bzg-wl-4xR"/>
+                            <constraint firstItem="0jW-7q-ezb" firstAttribute="top" secondItem="XfH-Kq-w51" secondAttribute="bottom" constant="8" id="gY9-yO-LrX"/>
+                            <constraint firstItem="jB4-vR-YT3" firstAttribute="centerY" secondItem="WPI-Se-00J" secondAttribute="centerY" id="j73-3s-b7H"/>
+                            <constraint firstItem="XfH-Kq-w51" firstAttribute="top" secondItem="d4l-ui-LSH" secondAttribute="bottom" constant="10" id="mWC-bW-eJQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0XM-iK-3w0"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xrU-mL-Oa5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1318.5" y="-610.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="header_captainamerica" width="375" height="230"/>
+        <image name="ic_bookmark_red.png" width="25" height="25"/>
+        <image name="img_n2omatt.png" width="395" height="395"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+</document>
